@@ -4,6 +4,13 @@
    <name>btn_MakeAppointment</name>
    <tag></tag>
    <elementGuidId>36ab10ef-42ea-4957-9e53-f8e9886ae996</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'btn-make-appointment']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
