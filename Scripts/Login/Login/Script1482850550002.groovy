@@ -18,14 +18,14 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Page_CuraHomepage/btn_MakeAppointment'))
+WebUI.setText(findTestObject('Login/Page_CURA Healthcare Service/input_Username'), 'John Doe')
 
-WebUI.setText(findTestObject('Page_Login/txt_UserName'), Username)
+WebUI.setEncryptedText(findTestObject('Login/Page_CURA Healthcare Service/input_Password'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
 
-WebUI.setText(findTestObject('Page_Login/txt_Password'), Password)
-
-WebUI.click(findTestObject('Page_Login/btn_Login'))
-
-landingPage = WebUI.verifyElementPresent(findTestObject('Page_CuraAppointment/div_Appointment'), GlobalVariable.G_Timeout)
+WebUI.click(findTestObject('Login/Page_CURA Healthcare Service/btn_Login'))
 
